@@ -8,6 +8,7 @@ export const options = {
         console.log({ GithubProfile: profile });
 
         let userRole = "GitHub User";
+
         if (profile?.email === "nicoo.marsili@gmail.com") {
           userRole = "admin";
         }
@@ -20,6 +21,8 @@ export const options = {
     GoogleProvider({
       profile(profile) {
         console.log({ GoogleProfile: profile });
+
+        let userRole = "Google User";
 
         return { ...profile, id: profile.sub, role: userRole };
       },

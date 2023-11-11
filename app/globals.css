@@ -7,6 +7,6 @@
     @apply font-bold text-3xl
   }
   a {
-    @apply underline font-bold
+    @apply underline font-bold text-white
   }
 }
